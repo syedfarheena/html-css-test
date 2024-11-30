@@ -3,9 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML&CSS Test</title>
+    <style>
+        /* Question-1 */
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        li {
+          margin: 10px 0;
+        }
+    
+        a {
+          text-decoration: none;
+          color: blue; 
+          font-size: 18px;
+        }
+    
+        a:hover {
+          color: red; 
+        }
+    
+        a:active {
+          color: green; 
+        }
+        /* Question-2 */
+        h1 {
+         font-family: 'Arial', sans-serif;
+         text-shadow: 2px 2px 4px blue(0, 0, 0, 0.2);
+        }
+
+        p {
+         font-size: 1.2rem;
+         line-height: 1.6;
+         text-align: justify;
+        }
+
+/* Question-3 */
+.card {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    background-color: palegoldenrod;
+}
+
+/* Question-4 */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: violet;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+/* Question-5 */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Question-6 */
+.color-change-btn {
+    background-color: blue;
+    color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.color-change-btn:hover {
+    background-color: darkblue;
+}
+
+/* Question-7 */
+.scale-button {
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: red;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.scale-button:hover {
+    transform: scale(1.2); 
+}
+      </style>
 </head>
 <body>
-    
+    <!-- first question -->
+    <ul>
+        <li><a href="#link1">Link 1</a></li>
+        <li><a href="#link2">Link 2</a></li>
+        <li><a href="#link3">Link 3</a></li>
+        <li><a href="#link4">Link 4</a></li>
+        <li><a href="#link5">Link 5</a></li>
+    </ul> <br><br>
+    <!-- second question -->
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple webpage to demonstrate basic HTML and CSS styling techniques. Here, we have a variety of styles for different elements.</p>
+
+    <!-- third question  -->
+    <div class="card">
+        <p>This is a card component with a border, padding, and margin. It can be used to display content like images, text, etc.</p>
+    </div>
+
+    <!-- fourth question -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- fifth question -->
+    <div class="gallery">
+        <img src="sunset1.jpg" alt="Image 1">
+        <img src="sunset2.jpeg" alt="Image 2">
+        <img src="sunset3.jpg" alt="Image 3">
+        <img src="sunset4.jpg" alt="Image 4">
+    </div>
+
+    <!-- sixth question -->
+    <button class="color-change-btn">Click Me!</button>
+
+    <!-- seventh question -->
+    <button class="scale-button">Hover Me</button>
+
 </body>
-</html>
